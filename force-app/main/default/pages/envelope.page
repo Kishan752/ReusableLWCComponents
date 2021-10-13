@@ -1,0 +1,22 @@
+<!--
+  @description       : 
+  @author            : Kishan Kumar
+  @group             : 
+  @last modified on  : 10-13-2021
+  @last modified by  : Kishan Kumar
+-->
+<apex:page renderAs="pdf" applyHtmlTag="false" showHeader="false" cache="true" readOnly="true">
+    <html>
+        <head>
+            <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+            <style>
+                @page {
+                size: a4 portrait;
+                }            
+            </style>
+        </head>
+        <body>
+            <h1>Test PDF</h1>
+        </body>
+    </html>
+</apex:page>
