@@ -10,7 +10,7 @@ export default class PdfLwc extends LightningElement {
         /*var url = '/apex/envelope';
         window.open(url);*/  // this will open the pdf in a new Window where user can download it
        
-        getApexData({ recordId })
+        getApexData({ recordId:this.recordId })
           .then(result => {
             console.log('Result', result);
           })
