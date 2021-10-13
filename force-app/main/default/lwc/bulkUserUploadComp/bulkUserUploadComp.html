@@ -1,0 +1,34 @@
+<!--
+@description       : 
+@author            : Kishan Kumar
+@group             : 
+@last modified on  : 10-13-2021
+@last modified by  : Kishan Kumar
+-->
+<template>
+
+<lightning-card title="Upload User">
+    
+        <lightning-layout multiple-rows>
+            <lightning-layout-item size="3" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="3">
+                <input type="file" class="file" 
+                onchange={showData}/>
+            </lightning-layout-item>
+            <lightning-layout-item size="3" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="3" >
+                <div class="custom-box">
+                    <lightning-button variant="brand" label="Download template" title="label" onclick={downloadTemplate}></lightning-button>
+                </div>
+            </lightning-layout-item>
+            <lightning-layout-item size="3" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="3" >
+                <div class="custom-box">
+                    <lightning-button variant="success" label="Upload" title="label" onclick={uploadFile}></lightning-button>
+                </div>
+            </lightning-layout-item>
+            
+            
+        </lightning-layout>
+    
+    
+</lightning-card>
+
+</template>
